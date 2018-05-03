@@ -17,6 +17,7 @@
   "keywords": [
     "react",
     "OwlCarousel",
+    "OwlCarousel",
     "gallery"
   ],
   "author": "xhriman",
@@ -25,10 +26,6 @@
     "url": "https://github.com/seal789ie/react-owl-carousel/issues"
   },
   "homepage": "https://github.com/seal789ie/react-owl-carousel#readme",
-  "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0",
-    "react-dom": "^0.14.0 || ^15.0.0"
-  },
   "devDependencies": {
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
@@ -50,6 +47,8 @@
   },
   "dependencies": {
     "owl.carousel": "~2.2.0",
-    "prop-types": "^15.5.8"
+    "prop-types": "^15.5.8",
+    "react": "^0.14.0 || ^15.0.0",
+    "react-dom": "^0.14.0 || ^15.0.0"
   }
 }

@@ -150,9 +150,6 @@ class OwlCarousel extends Component {
         }
     }
 
-    // refresh(event, speed) {
-    // }
-
     to(position, speed) {
         if (typeof(position) == 'number' && typeof(speed) == 'number') {
             this.owlCarousel.trigger('to.owl.carousel', [position, speed]);
@@ -169,18 +166,6 @@ class OwlCarousel extends Component {
     destory() {
         this.owlCarousel.trigger('destroy.owl.carousel');
     }
-
-    // replace(data) {
-
-    // }
-
-    // add(data, position) {
-
-    // }
-
-    // remove(position) {
-
-    // }
 
     play(timeout, speed) {
         if (typeof(timeout) == 'number' && typeof(speed) == 'number') {
@@ -216,7 +201,7 @@ class OwlCarousel extends Component {
         } = this.propsWithoutOptions;
 
         return (
-            <div 
+            <div
                 className={`owl-carousel ${className}`}
                 ref={inst => this.inst = inst}
                 {...props}

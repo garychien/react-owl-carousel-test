@@ -1,9 +1,138 @@
 .item {
-  height: 10rem;
-  background: #4DC7A0;
-  padding: 1rem;
+  height: 20rem;
 }
 
-.item-video {
-  height: 300px;
+.box-area {
+  height: 25rem;
+  position: absolute;
+  top: -80px;
+  text-align: center;
+  color: white;
+  width: 34%;
+  right: 33%;
+  border: 7px solid #28a9e0;
+  padding: 0;
+  margin: 0;
 }
+
+.box-border-test1{
+  z-index: 9;
+  position: absolute;
+  width: 100%;
+  bottom: -7px;
+  height: 7px;
+  background-color: #28a9e0;
+}
+.box-border-test2{
+  z-index: 9;
+  position: absolute;
+  width: 7px;
+  bottom: -7px;
+  left: -7px;
+  height: 100%;
+  background-color: #28a9e0;
+}
+.box-border-test3{
+  z-index: 9;
+  position: absolute;
+  width: 7px;
+  bottom: -7px;
+  right: -7px;
+  height: 100%;
+  background-color: #28a9e0;
+}
+
+
+.slider-img {
+  position: relative;
+  margin-top: 100px;
+}
+.box-title {
+  background-color: #28a9e0;
+  padding: 1px;
+}
+.content1 {
+  margin-top: 0px;
+  margin-bottom: 6px;
+}
+.content2 {
+  margin-top: 0px;
+}
+
+
+.owl-item img {
+  filter: brightness(0.3);
+}
+/*============== 方法一 需開啟(center: true)參數 ============*/
+/*.owl-item.active.center img{*/
+  /*filter: brightness(1);*/
+/*}*/
+
+/*============== 方法二 ====================================*/
+.owl-item.active + .owl-item.active img{
+  filter: brightness(1);
+}
+.owl-item.active + .owl-item.active + .owl-item.active img{
+  filter: brightness(0.3);
+}
+
+/*================== 遊戲簡介 ＆ PLAY-NOW按鈕 =================*/
+.direction {
+  position: absolute;
+  width: 100%;
+  height: 9rem;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  z-index: 10;
+  color: white;
+}
+.direction-word {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.play-button{
+  background-color: #28a9e0;
+  color: white;
+}
+.owl-item .direction {
+  display: none;
+}
+.owl-item.active + .owl-item.active .direction{
+  display: flex;
+}
+.owl-item.active + .owl-item.active + .owl-item.active .direction{
+  display: none;
+}
+
+.owl-carousel {
+  z-index: auto;
+}
+.owl-stage-outer{
+  z-index: 1;
+}
+
+/*================== 輪播左右按鈕 =================*/
+.owl-nav {
+  z-index: 3;
+}
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 40%;
+  right: 50%;
+  background-color: #28a9e0 !important;
+  width: 35px !important;
+  height: 35px !important;
+  border-radius:99em !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+.owl-prev {
+  left: 32%;
+}
+.owl-next {
+  right: 32%;
+}
+
