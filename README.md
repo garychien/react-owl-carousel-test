@@ -1,4 +1,4 @@
-# react-owl-carousel(test) quote-by-xhriman  [![npm version](https://img.shields.io/npm/v/react-owl-carousel.svg?style=flat)](https://www.npmjs.com/package/react-owl-carousel)
+# react-owl-carousel-test (quote-by-xhriman)  [![npm version](https://img.shields.io/npm/v/react-owl-carousel.svg?style=flat)](https://www.npmjs.com/package/react-owl-carousel)
 [React](http://facebook.github.io/react/) + [Owl Carousel 2.2](https://owlcarousel2.github.io/OwlCarousel2/)
 
 ### 1.Getting Started

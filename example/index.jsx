@@ -5,7 +5,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import Demo from './demo';
+import Demo from './game-list';
 
 
 const rootEl = document.getElementById('root');
@@ -19,4 +19,4 @@ const render = Component => (
 );
 
 render(Demo);
-if (module.hot) module.hot.accept('./demo', () => render(Demo));
+if (module.hot) module.hot.accept('./', () => render(Demo));
