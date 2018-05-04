@@ -1,63 +1,127 @@
-.item {
-  height: 10rem;
-}
-
-.slider-img {
-  position: relative;
+body {
+  overflow: scroll;
   margin-top: 100px;
 }
 
-.owl-item img {
-  filter: brightness(0.5);
-}
-.owl-item.active + .owl-item.active + .owl-item.active img{
-  filter: brightness(1);
-}
-.owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active img{
-  filter: brightness(0.5);
+.game-list {
+  position: relative;
 }
 
-/*================== 遊戲名稱 =================*/
-.direction {
+/*====== 遊戲名稱 =====*/
+.game-list .direction {
   width: 100%;
-  height: 4rem;
   right: 15px;
   background-color: #eeeeee;
   bottom: 0;
   z-index: 10;
   color: #000000;
+  font-size: 11px;
 }
-.game-star {
+.game-list .game-star {
   color: #28a9e0;
 }
-.owl-item .direction {
+
+.game-list .owl-item img {
   filter: brightness(0.5);
 }
-.owl-item.active + .owl-item.active + .owl-item.active .direction{
+.game-list .owl-item.active img{
   filter: brightness(1);
 }
-.owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active .direction{
+
+.game-list .owl-item .owl-box .direction {
   filter: brightness(0.5);
 }
+/*範圍開始*/
+.game-list .owl-item.active .direction{
+  filter: brightness(1);
+}
 
-/*================== 輪播左右按鈕 =================*/
-.owl-prev, .owl-next {
+
+/*====== 輪播左右按鈕 =====*/
+.game-list .owl-prev, .game-list .owl-next {
   position: absolute;
   top: 40%;
   right: 50%;
   background-color: #28a9e0 !important;
-  width: 35px !important;
-  height: 35px !important;
+  width: 33px;
+  height: 33px;
   border-radius:99em !important;
   display: flex !important;
   justify-content: center;
   align-items: center;
   z-index: 99;
 }
-.owl-prev {
-  left: 23%;
+.game-list .owl-prev {
+  left: 14%;
 }
-.owl-next {
-  right: 23%;
+.game-list .owl-next {
+  right: 14%;
 }
 
+@media screen and (min-width: 768px) {
+  /*====== 輪播左右按鈕 =====*/
+  .game-list .owl-prev {
+    left: -4px;
+  }
+  .game-list .owl-next {
+    right: -4px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /*====== 輪播左右按鈕 =====*/
+  .game-list .owl-prev {
+    left: 17px;
+  }
+  .game-list .owl-next {
+    right: 17px;
+  }
+  /*.game-list .owl-prev, .game-list .owl-next {*/
+    /*width: 41px;*/
+    /*height: 41px;*/
+  /*}*/
+
+  /*======  遊戲名稱 =====*/
+  .game-list .direction {
+    font-size: 13.5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .game-list .owl-item .owl-box img {
+    filter: brightness(0.5);
+  }
+  .game-list .owl-item.active + .owl-item.active + .owl-item.active img {
+    filter: brightness(1);
+  }
+  .game-list .owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active img {
+    filter: brightness(0.5);
+  }
+
+  .game-list .owl-item .direction {
+    filter: brightness(0.5) !important;
+  }
+  .game-list .owl-item.active + .owl-item.active + .owl-item.active .direction{
+    filter: brightness(1) !important;
+  }
+  .game-list .owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active .direction{
+    filter: brightness(0.5) !important;
+  }
+
+  /*====== 輪播左右按鈕 =====*/
+  .game-list .owl-prev {
+    left: 23%;
+  }
+  .game-list .owl-next {
+    right: 23%;
+  }
+  /*.game-list .owl-prev, .game-list .owl-next {*/
+    /*width: 48px;*/
+    /*height: 49px;*/
+  /*}*/
+
+  /*======  遊戲名稱 =====*/
+  .game-list .direction {
+    font-size: 16px;
+  }
+}
