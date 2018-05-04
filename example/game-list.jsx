@@ -2,8 +2,8 @@
 
 import React from 'react';
 import OwlCarousel from 'react-owl-carousel';
-import "./game.css";
 import "./bootstrap.min.css";
+import "./game.css";
 
 class Demo extends React.Component {
     constructor(props) {
@@ -14,16 +14,35 @@ class Demo extends React.Component {
                 loop: true,
                 nav: true,
                 dots: false,
-                // center: true,
-                items: 8,
-                navText: ['<', '>']
+                navText: ['<', '>'],
+                responsive:{
+                    0:{
+                        nav: false,
+                        items: 2
+                    },
+                    576:{
+                        nav: false,
+                        items: 3
+                    },
+                    768:{
+                        stagePadding: 15,
+                        items: 4
+                    },
+                    992:{
+                        stagePadding: 39,
+                        items: 4
+                    },
+                    1200:{
+                        items: 8
+                    }
+                }
             },
 
             items: [
                 <div className="owl-box" key={1}>
                     <div className="row no-gutters">
                         <div className="col-12">
-                            <img className="item" src="http://s.amazeui.org/media/i/demos/bing-1.jpg"></img>
+                            <img className="item" src="./example/img/dash.jpg"></img>
                         </div>
                         <div className="col-12">
                             <div className="row direction no-gutters">
@@ -36,7 +55,7 @@ class Demo extends React.Component {
                 <div className="owl-box" key={2}>
                     <div className="row no-gutters">
                         <div className="col-12">
-                            <img className="item" src="http://s.amazeui.org/media/i/demos/bing-2.jpg"></img>
+                            <img className="item" src="./example/img/bluesea.jpg"></img>
                         </div>
                         <div className="col-12">
                             <div className="row direction no-gutters">
@@ -49,7 +68,7 @@ class Demo extends React.Component {
                 <div className="owl-box" key={3}>
                     <div className="row no-gutters">
                         <div className="col-12">
-                            <img className="item" src="http://s.amazeui.org/media/i/demos/bing-3.jpg"></img>
+                            <img className="item" src="./example/img/bikini.jpg"></img>
                         </div>
                         <div className="col-12">
                             <div className="row direction no-gutters">
@@ -62,7 +81,7 @@ class Demo extends React.Component {
                 <div className="owl-box" key={4}>
                     <div className="row no-gutters">
                         <div className="col-12">
-                            <img className="item" src="http://s.amazeui.org/media/i/demos/bing-4.jpg"></img>
+                            <img className="item" src="./example/img/zombie.jpg"></img>
                         </div>
                         <div className="col-12">
                             <div className="row direction no-gutters">
@@ -75,7 +94,7 @@ class Demo extends React.Component {
                 <div className="owl-box" key={5}>
                     <div className="row no-gutters">
                         <div className="col-12">
-                            <img className="item" src="http://s.amazeui.org/media/i/demos/bing-1.jpg"></img>
+                            <img className="item" src="./example/img/huga5x9.jpg"></img>
                         </div>
                         <div className="col-12">
                             <div className="row direction no-gutters">
@@ -88,7 +107,7 @@ class Demo extends React.Component {
                 <div className="owl-box" key={6}>
                     <div className="row no-gutters">
                         <div className="col-12">
-                            <img className="item" src="http://s.amazeui.org/media/i/demos/bing-2.jpg"></img>
+                            <img className="item" src="./example/img/kof.jpg"></img>
                         </div>
                         <div className="col-12">
                             <div className="row direction no-gutters">
@@ -101,7 +120,7 @@ class Demo extends React.Component {
                 <div className="owl-box" key={7}>
                     <div className="row no-gutters">
                         <div className="col-12">
-                            <img className="item" src="http://s.amazeui.org/media/i/demos/bing-3.jpg"></img>
+                            <img className="item" src="./example/img/kof5x9.jpg"></img>
                         </div>
                         <div className="col-12">
                             <div className="row direction no-gutters">
@@ -114,7 +133,7 @@ class Demo extends React.Component {
                 <div className="owl-box" key={8}>
                     <div className="row no-gutters">
                         <div className="col-12">
-                            <img className="item" src="http://s.amazeui.org/media/i/demos/bing-4.jpg"></img>
+                            <img className="item" src="./example/img/legend5x25.jpg"></img>
                         </div>
                         <div className="col-12">
                             <div className="row direction no-gutters">
@@ -127,7 +146,7 @@ class Demo extends React.Component {
                 <div className="owl-box" key={9}>
                     <div className="row no-gutters">
                         <div className="col-12">
-                            <img className="item" src="http://s.amazeui.org/media/i/demos/bing-1.jpg"></img>
+                            <img className="item" src="./example/img/naruto.jpg"></img>
                         </div>
                         <div className="col-12">
                             <div className="row direction no-gutters">
@@ -140,7 +159,7 @@ class Demo extends React.Component {
                 <div className="owl-box" key={10}>
                     <div className="row no-gutters">
                         <div className="col-12">
-                            <img className="item" src="http://s.amazeui.org/media/i/demos/bing-2.jpg"></img>
+                            <img className="item" src="./example/img/onepiece3x1.jpg"></img>
                         </div>
                         <div className="col-12">
                             <div className="row direction no-gutters">
@@ -157,7 +176,7 @@ class Demo extends React.Component {
 
     render() {
         return (
-            <div className="slider-img">
+            <div className="game-list">
                 <OwlCarousel
                     ref={inst => this.slider = inst}
                     className="owl-theme"
