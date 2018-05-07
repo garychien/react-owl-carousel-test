@@ -1,125 +1,120 @@
-.item {
-  height: 20rem;
+body {
+  overflow: scroll;
+  margin-top: 100px;
 }
-
-.box-area {
-  height: 25rem;
-  position: absolute;
-  top: -80px;
-  text-align: center;
-  color: white;
-  width: 34%;
-  right: 33%;
-  border: 7px solid #28a9e0;
-  padding: 0;
-  margin: 0;
-}
-
-.box-border-test1{
-  z-index: 9;
-  position: absolute;
-  width: 100%;
-  bottom: -7px;
-  height: 7px;
-  background-color: #28a9e0;
-}
-.box-border-test2{
-  z-index: 9;
-  position: absolute;
-  width: 7px;
-  bottom: -7px;
-  left: -7px;
-  height: 100%;
-  background-color: #28a9e0;
-}
-.box-border-test3{
-  z-index: 9;
-  position: absolute;
-  width: 7px;
-  bottom: -7px;
-  right: -7px;
-  height: 100%;
-  background-color: #28a9e0;
-}
-
 
 .slider-img {
   position: relative;
-  margin-top: 100px;
 }
-.box-title {
+
+/*====== 上方TOPGAME ======*/
+.slider-img .box-area {
+  position: absolute;
+  top: 0px;
+  color: white;
+  width: 100%;
   background-color: #28a9e0;
-  padding: 1px;
+  left: 0;
+  right: 0;
+  text-align:center;
+  margin:0 auto;
 }
-.content1 {
-  margin-top: 0px;
-  margin-bottom: 6px;
+.slider-img .box-title {
+  background-color: #28a9e0;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
-.content2 {
-  margin-top: 0px;
+.slider-img .content1 {
+  font-size: 20px;
+}
+.slider-img .content2 {
+  font-size: 14px;
 }
 
-
-.owl-item img {
-  filter: brightness(0.3);
+/*====== 左下右藍線 ======*/
+.slider-img .box-border-test1{
+  z-index: 9;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 5px;
+  background-color: #28a9e0;
 }
-/*============== 方法一 需開啟(center: true)參數 ============*/
-/*.owl-item.active.center img{*/
-  /*filter: brightness(1);*/
-/*}*/
-
-/*============== 方法二 ====================================*/
-.owl-item.active + .owl-item.active img{
-  filter: brightness(1);
+.slider-img .box-border-test2{
+  z-index: 9;
+  position: absolute;
+  width: 3px;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  background-color: #28a9e0;
 }
-.owl-item.active + .owl-item.active + .owl-item.active img{
-  filter: brightness(0.3);
+.slider-img .box-border-test3{
+  z-index: 9;
+  position: absolute;
+  width: 3px;
+  bottom: 0px;
+  right: 0px;
+  height: 100%;
+  background-color: #28a9e0;
+}
+/* 陰影 */
+.slider-img .box-shadow-bottom,.box-shadow-top {
+  border-radius:50%;
+  content: "";
+  height: 10px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  text-align:center;
+  margin:0 auto;
+}
+
+.slider-img .box-shadow-bottom {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  bottom: 0;
+}
+.slider-img .box-shadow-top {
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+  top: -5px;
 }
 
 /*================== 遊戲簡介 ＆ PLAY-NOW按鈕 =================*/
-.direction {
-  position: absolute;
+.slider-img .direction {
   width: 100%;
-  height: 9rem;
-  right: 15px;
-  background: rgba(0, 0, 0, 0.3);
-  bottom: 0;
+  background: #000000;
+  bottom: 5px;
   z-index: 10;
   color: white;
+  padding: 20px;
 }
-.direction-word {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.play-button{
+.slider-img .play-button{
   background-color: #28a9e0;
   color: white;
+  font-size: 16px;
 }
-.owl-item .direction {
-  display: none;
-}
-.owl-item.active + .owl-item.active .direction{
-  display: flex;
-}
-.owl-item.active + .owl-item.active + .owl-item.active .direction{
-  display: none;
+.slider-img .content3 {
+  font-size: 13px;
 }
 
-.owl-carousel {
+.slider-img .owl-carousel {
   z-index: auto;
 }
-.owl-stage-outer{
+.slider-img .owl-stage-outer{
   z-index: 1;
 }
 
 /*================== 輪播左右按鈕 =================*/
-.owl-nav {
+.slider-img .owl-nav {
   z-index: 3;
 }
-.owl-prev, .owl-next {
+.slider-img .owl-prev, .owl-next {
   position: absolute;
   top: 40%;
-  right: 50%;
   background-color: #28a9e0 !important;
   width: 35px !important;
   height: 35px !important;
@@ -129,10 +124,116 @@
   align-items: center;
   z-index: 99;
 }
-.owl-prev {
-  left: 32%;
+
+/*===== 圖片調暗 =====*/
+.slider-img .owl-item img {
+  filter: brightness(0.5);
 }
-.owl-next {
-  right: 32%;
+.slider-img .owl-item.center img{
+  filter: brightness(1);
 }
 
+/*===== 說明區塊隱藏 =====*/
+.slider-img .owl-item .direction {
+  display: none;
+}
+.slider-img .owl-item.center .direction{
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .slider-img .direction {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .slider-img .box-area {
+    width: calc(100% - 200px);
+  }
+
+  /*====== 左又藍線 ======*/
+  .slider-img .box-border-test1 {
+    width: calc(100% - 200px);
+    right: 100px;
+  }
+  .slider-img .box-border-test2{
+    width: 5px;
+    left: 100px;
+  }
+  .slider-img .box-border-test3{
+    width: 5px;
+    right: 100px;
+  }
+  /* 陰影 */
+  .slider-img .box-shadow-bottom,.box-shadow-top {
+    width: calc(100% - 200px) !important;
+  }
+
+  /*===== 左右按鈕 =====*/
+  .slider-img .owl-prev {
+    left: calc(0% + 80px);
+  }
+  .slider-img .owl-next {
+    right: calc(0% + 80px);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .slider-img .box-area {
+    width: calc(100% - 300px);
+  }
+
+  /*====== 左又藍線 ======*/
+  .slider-img .box-border-test1 {
+    width: calc(100% - 300px);
+    right: 150px;
+  }
+  .slider-img .box-border-test2{
+    left: 150px;
+  }
+  .slider-img .box-border-test3{
+    right: 150px;
+  }
+  /* 陰影 */
+  .slider-img .box-shadow-bottom,.box-shadow-top {
+    width: calc(100% - 300px) !important;
+  }
+
+  /*===== 左右按鈕 =====*/
+  .slider-img .owl-prev {
+    left: calc(0% + 130px);
+  }
+  .slider-img .owl-next {
+    right: calc(0% + 130px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slider-img .box-area {
+    width: calc(100% - 800px);
+  }
+
+  /*====== 左又藍線 ======*/
+  .slider-img .box-border-test1 {
+    width: calc(100% - 800px);
+    right: 400px;
+  }
+  .slider-img .box-border-test2{
+    left: 400px;
+  }
+  .slider-img .box-border-test3{
+    right: 400px;
+  }
+  /* 陰影 */
+  .slider-img .box-shadow-bottom,.box-shadow-top {
+    width: calc(100% - 800px) !important;
+  }
+
+  /*===== 左右按鈕 =====*/
+  .slider-img .owl-prev {
+    left: calc(0% + 380px);
+  }
+  .slider-img .owl-next {
+    right: calc(0% + 380px);
+  }
+}
