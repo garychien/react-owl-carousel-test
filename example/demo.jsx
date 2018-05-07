@@ -2,8 +2,8 @@
 
 import React from 'react';
 import OwlCarousel from 'react-owl-carousel';
-import "./style.css";
 import "./bootstrap.min.css";
+import "./style.css";
 
 class Demo extends React.Component {
     constructor(props) {
@@ -12,79 +12,68 @@ class Demo extends React.Component {
         this.state = {
             options: {
                 loop: true,
-                // margin:5,
-                nav: true,
+                nav: false,
                 dots: false,
-                // autoplay: true,
-                items: 3,
-                // center: true,
-                // navClass: ['prev', 'next'],
-                navText: ['<', '>']
+                center: true,
+                navText: ['<', '>'],
+                items:1,
+                stagePadding: 0,
+                responsive:{
+                    768:{
+                        stagePadding: 100,
+                        nav: true,
+                    },
+                    992:{
+                        stagePadding: 150,
+                        nav: true,
+                    },
+                    1200:{
+                        stagePadding: 400,
+                        nav: true,
+                    }
+                }
             },
 
 
             items: [
                 <div className="owl-box" key={1}>
-                    <img className="item" src="http://s.amazeui.org/media/i/demos/bing-1.jpg"></img>
-                    <div className="direction row">
-                        <div className="col-8 direction-word">
-                            <p>League of Legends</p>
-                            <p>in the leagends of you play a full-fledged character,samming more intense sparks in the battle,nervous and exciting play!</p>
+                    <img className="item" src="./example/img/top-game1.jpg"></img>
+                    <div className="row no-gutters direction">
+                        <div className="col-12 col-md-8">
+                            <p className="content1">League of Legends</p>
+                            <p className="content3">in the leagends of you play a full-fledged character,samming more intense sparks in the battle,nervous and exciting play!</p>
                         </div>
-                        <div className="col-4 d-flex justify-content-center align-items-center">
+                        <div className="col-12 col-md-4 d-flex justify-content-start justify-content-md-center align-items-center">
                             <button type="button" className="btn play-button">PLAY NOW</button>
                         </div>
                     </div>
+
                 </div>,
                 <div className="owl-box" key={2}>
-                    <img className="item" src="http://s.amazeui.org/media/i/demos/bing-2.jpg"></img>
-                    <div className="direction row">
-                        <div className="col-8 direction-word">
-                            <p>League of Legends</p>
-                            <p>samming more intense sparks in the battle!</p>
+                    <img className="item" src="./example/img/top-game1.jpg"></img>
+                    <div className="row no-gutters direction">
+                        <div className="col-12 col-md-8">
+                            <p className="content1">League of Legends</p>
+                            <p className="content3">in the leagends of you play a full-fledged character,samming more intense sparks in the battle,nervous and exciting play!</p>
                         </div>
-                        <div className="col-4 d-flex justify-content-center align-items-center">
+                        <div className="col-12 col-md-4 d-flex justify-content-start justify-content-md-center align-items-center">
                             <button type="button" className="btn play-button">PLAY NOW</button>
                         </div>
                     </div>
+
                 </div>,
                 <div className="owl-box" key={3}>
-                    <img className="item" src="http://s.amazeui.org/media/i/demos/bing-3.jpg"></img>
-                    <div className="direction row">
-                        <div className="col-8 direction-word">
-                            <p>I'm Legends</p>
-                            <p>nervous and exciting play,come and enjoy the game!</p>
+                    <img className="item" src="./example/img/top-game1.jpg"></img>
+                    <div className="row no-gutters direction">
+                        <div className="col-12 col-md-8">
+                            <p className="content1">League of Legends</p>
+                            <p className="content3">in the leagends of you play a full-fledged character,samming more intense sparks in the battle,nervous and exciting play!</p>
                         </div>
-                        <div className="col-4 d-flex justify-content-center align-items-center">
+                        <div className="col-12 col-md-4 d-flex justify-content-start justify-content-md-center align-items-center">
                             <button type="button" className="btn play-button">PLAY NOW</button>
                         </div>
                     </div>
-                </div>,
-                <div className="owl-box" key={4}>
-                    <img className="item" src="http://s.amazeui.org/media/i/demos/bing-4.jpg"></img>
-                    <div className="direction row">
-                        <div className="col-8 direction-word">
-                            <p>League of Legends</p>
-                            <p>in the leagends of you play a full-fledged character!</p>
-                        </div>
-                        <div className="col-4 d-flex justify-content-center align-items-center">
-                            <button type="button" className="btn play-button">PLAY NOW</button>
-                        </div>
-                    </div>
-                </div>,
-                <div className="owl-box" key={5}>
-                    <img className="item" src="http://s.amazeui.org/media/i/demos/bing-4.jpg"></img>
-                    <div className="direction row">
-                        <div className="col-8 direction-word">
-                            <p>League of Legends</p>
-                            <p>enjoy the game!</p>
-                        </div>
-                        <div className="col-4 d-flex justify-content-center align-items-center">
-                            <button type="button" className="btn play-button">PLAY NOW</button>
-                        </div>
-                    </div>
-                </div>,
-
+                </div>
             ],
 
         };
@@ -103,13 +92,21 @@ class Demo extends React.Component {
 
                 <div className="box-area">
                     <div className="box-title">
-                        <h3 className="content1">TOP GAMES</h3>
-                        <h5 className="content2">The most exciting and fun game are here!</h5>
+                        <div className="row no-gutters">
+                            <div className="col-12">
+                                <div className="content1">TOP GAMES</div>
+                            </div>
+                            <div className="col-12">
+                                <div className="content2">The most exciting and fun game are here,so you can nerver stop!</div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="box-border-test1"></div>
-                    <div className="box-border-test2"></div>
-                    <div className="box-border-test3"></div>
                 </div>
+                <div className="box-border-test1"></div>
+                <div className="box-border-test2"></div>
+                <div className="box-border-test3"></div>
+                <div className="box-shadow-top"></div>
+                <div className="box-shadow-bottom"></div>
             </div>
         );
     }

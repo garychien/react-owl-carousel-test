@@ -5,7 +5,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import Demo from './game-list';
+import Demo from './demo';
 
 
 const rootEl = document.getElementById('root');
