@@ -46,9 +46,9 @@ class Demo extends React.Component {
                         </div>
                         <div className="col-12">
                             <div className="row direction no-gutters">
-                            <div className="col-12 d-flex justify-content-center align-items-end">Game Title1</div>
-                            <div className="col-12 d-flex justify-content-center align-items-start game-star">★</div>
-                        </div>
+                                <div className="col-12 d-flex justify-content-center align-items-end">Game Title1</div>
+                                <div className="col-12 d-flex justify-content-center align-items-start game-star">★</div>
+                            </div>
                         </div>
                     </div>
                 </div>,
@@ -59,9 +59,9 @@ class Demo extends React.Component {
                         </div>
                         <div className="col-12">
                             <div className="row direction no-gutters">
-                            <div className="col-12 d-flex justify-content-center align-items-end">Game Title2</div>
-                            <div className="col-12 d-flex justify-content-center align-items-start game-star">★ ★</div>
-                        </div>
+                                <div className="col-12 d-flex justify-content-center align-items-end">Game Title2</div>
+                                <div className="col-12 d-flex justify-content-center align-items-start game-star">★ ★</div>
+                            </div>
                         </div>
                     </div>
                 </div>,
@@ -72,9 +72,9 @@ class Demo extends React.Component {
                         </div>
                         <div className="col-12">
                             <div className="row direction no-gutters">
-                            <div className="col-12 d-flex justify-content-center align-items-end">Game Title3</div>
-                            <div className="col-12 d-flex justify-content-center align-items-start game-star">★ ★ ★</div>
-                        </div>
+                                <div className="col-12 d-flex justify-content-center align-items-end">Game Title3</div>
+                                <div className="col-12 d-flex justify-content-center align-items-start game-star">★ ★ ★</div>
+                            </div>
                         </div>
                     </div>
                 </div>,
@@ -85,9 +85,9 @@ class Demo extends React.Component {
                         </div>
                         <div className="col-12">
                             <div className="row direction no-gutters">
-                            <div className="col-12 d-flex justify-content-center align-items-end">Game Title4</div>
-                            <div className="col-12 d-flex justify-content-center align-items-start game-star">★ ★ ★ ★</div>
-                        </div>
+                                <div className="col-12 d-flex justify-content-center align-items-end">Game Title4</div>
+                                <div className="col-12 d-flex justify-content-center align-items-start game-star">★ ★ ★ ★</div>
+                            </div>
                         </div>
                     </div>
                 </div>,
@@ -98,9 +98,9 @@ class Demo extends React.Component {
                         </div>
                         <div className="col-12">
                             <div className="row direction no-gutters">
-                            <div className="col-12 d-flex justify-content-center align-items-end">Game Title5</div>
-                            <div className="col-12 d-flex justify-content-center align-items-start game-star">★ ★ ★ ★ ★</div>
-                        </div>
+                                <div className="col-12 d-flex justify-content-center align-items-end">Game Title5</div>
+                                <div className="col-12 d-flex justify-content-center align-items-start game-star">★ ★ ★ ★ ★</div>
+                            </div>
                         </div>
                     </div>
                 </div>,
@@ -111,9 +111,9 @@ class Demo extends React.Component {
                         </div>
                         <div className="col-12">
                             <div className="row direction no-gutters">
-                            <div className="col-12 d-flex justify-content-center align-items-end">Game Title6</div>
-                            <div className="col-12 d-flex justify-content-center align-items-start game-star">★ ★ ★ ★</div>
-                        </div>
+                                <div className="col-12 d-flex justify-content-center align-items-end">Game Title6</div>
+                                <div className="col-12 d-flex justify-content-center align-items-start game-star">★ ★ ★ ★</div>
+                            </div>
                         </div>
                     </div>
                 </div>,
@@ -124,9 +124,9 @@ class Demo extends React.Component {
                         </div>
                         <div className="col-12">
                             <div className="row direction no-gutters">
-                            <div className="col-12 d-flex justify-content-center align-items-end">Game Title7</div>
-                            <div className="col-12 d-flex justify-content-center align-items-start game-star">★ ★ ★</div>
-                        </div>
+                                <div className="col-12 d-flex justify-content-center align-items-end">Game Title7</div>
+                                <div className="col-12 d-flex justify-content-center align-items-start game-star">★ ★ ★</div>
+                            </div>
                         </div>
                     </div>
                 </div>,
@@ -137,9 +137,9 @@ class Demo extends React.Component {
                         </div>
                         <div className="col-12">
                             <div className="row direction no-gutters">
-                            <div className="col-12 d-flex justify-content-center align-items-end">Game Title8</div>
-                            <div className="col-12 d-flex justify-content-center align-items-start game-star">★ ★</div>
-                        </div>
+                                <div className="col-12 d-flex justify-content-center align-items-end">Game Title8</div>
+                                <div className="col-12 d-flex justify-content-center align-items-start game-star">★ ★</div>
+                            </div>
                         </div>
                     </div>
                 </div>,
@@ -150,9 +150,9 @@ class Demo extends React.Component {
                         </div>
                         <div className="col-12">
                             <div className="row direction no-gutters">
-                            <div className="col-12 d-flex justify-content-center align-items-end">Game Title9</div>
-                            <div className="col-12 d-flex justify-content-center align-items-start game-star">★</div>
-                        </div>
+                                <div className="col-12 d-flex justify-content-center align-items-end">Game Title9</div>
+                                <div className="col-12 d-flex justify-content-center align-items-start game-star">★</div>
+                            </div>
                         </div>
                     </div>
                 </div>,
@@ -163,9 +163,9 @@ class Demo extends React.Component {
                         </div>
                         <div className="col-12">
                             <div className="row direction no-gutters">
-                            <div className="col-12 d-flex justify-content-center align-items-end">Game Title10</div>
-                            <div className="col-12 d-flex justify-content-center align-items-start game-star">★ ★</div>
-                        </div>
+                                <div className="col-12 d-flex justify-content-center align-items-end">Game Title10</div>
+                                <div className="col-12 d-flex justify-content-center align-items-start game-star">★ ★</div>
+                            </div>
                         </div>
                     </div>
                 </div>

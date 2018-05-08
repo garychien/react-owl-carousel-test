@@ -1,0 +1,50 @@
+body {
+  overflow: scroll;
+  margin-top: 100px;
+}
+
+.promotions {
+  position: relative;
+}
+
+/*====== 輪播左右按鈕 =====*/
+.promotions .owl-prev, .promotions .owl-next {
+  position: absolute;
+  top: 40%;
+  background-color: #28a9e0 !important;
+  width: 33px;
+  height: 33px;
+  border-radius:99em !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+.promotions .owl-prev {
+  left: -15px;
+}
+.promotions .owl-next {
+  right: -15px;
+}
+
+@media screen and (min-width: 768px) {
+  .promotions {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .promotions {
+    padding-left: 390px;
+    padding-right: 390px;
+  }
+
+  /*====== 輪播左右按鈕 =====*/
+  .promotions .owl-prev {
+    left: -20px;
+  }
+  .promotions .owl-next {
+    right: -20px;
+  }
+}
