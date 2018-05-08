@@ -2,8 +2,8 @@
 
 import React from 'react';
 import OwlCarousel from 'react-owl-carousel';
-import "./bootstrap.min.css";
-import "./game.css";
+import "./styles/bootstrap.min.css";
+import "./styles/game.css";
 
 class Demo extends React.Component {
     constructor(props) {

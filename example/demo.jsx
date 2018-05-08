@@ -2,8 +2,8 @@
 
 import React from 'react';
 import OwlCarousel from 'react-owl-carousel';
-import "./bootstrap.min.css";
-import "./style.css";
+import "./styles/bootstrap.min.css";
+import "./styles/style.css";
 
 class Demo extends React.Component {
     constructor(props) {
@@ -37,7 +37,7 @@ class Demo extends React.Component {
 
             items: [
                 <div className="owl-box" key={1}>
-                    <img className="item" src="./example/img/top-game1.jpg"></img>
+                    <img className="item" src="./example/img/top-games/top-game1.jpg"></img>
                     <div className="row no-gutters direction">
                         <div className="col-12 col-md-8">
                             <p className="content1">League of Legends</p>
@@ -50,7 +50,7 @@ class Demo extends React.Component {
 
                 </div>,
                 <div className="owl-box" key={2}>
-                    <img className="item" src="./example/img/top-game1.jpg"></img>
+                    <img className="item" src="./example/img/top-games/top-game1.jpg"></img>
                     <div className="row no-gutters direction">
                         <div className="col-12 col-md-8">
                             <p className="content1">League of Legends</p>
@@ -63,7 +63,7 @@ class Demo extends React.Component {
 
                 </div>,
                 <div className="owl-box" key={3}>
-                    <img className="item" src="./example/img/top-game1.jpg"></img>
+                    <img className="item" src="./example/img/top-games/top-game1.jpg"></img>
                     <div className="row no-gutters direction">
                         <div className="col-12 col-md-8">
                             <p className="content1">League of Legends</p>
