@@ -8,7 +8,6 @@ import "owl.carousel";
 
 
 const Owl_Carousel_Options = {
-
     // options
     items: PropTypes.number,
     margin: PropTypes.number,
