@@ -12,6 +12,7 @@ import OwlCarousel from 'react-owl-carousel';
 ### 2.Set up your javascript
 wrap your divs inside the OwlCarousel component
 
+
 ```jsx
 <OwlCarousel 
 	className="owl-theme"
